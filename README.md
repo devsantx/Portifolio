@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![GitHub repo size](https://img.shields.io/github/repo-size/devsantx/portifolio?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/devsantx/portifolio?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## Expanding the ESLint configuration
+<img src="./src/assets/thumbnail/Thumbnail Portifolio.png" alt="Imagem principal do portfólio" width="1000px" />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Bem-vindo ao meu portfólio! Este projeto foi criado para destacar minha experiência, projetos e habilidades como desenvolvedor. O design foi pensado para ser intuitivo e moderno, proporcionando uma experiência agradável ao visitante.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🎯 Sobre o Portfólio
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Meu portfólio é dividido em seções que apresentam quem sou e o que faço:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Home**: Uma introdução breve sobre mim e minhas competências principais.
+- **Projetos**: Exibição de trabalhos realizados com links para visualização.
+- **Experiência**: Uma linha do tempo com meu histórico profissional.
+- **Feedbacks**: Depoimentos de clientes e colegas.
+- **Contato**: Informações e links para me encontrar.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5** e **CSS3**
+- **JavaScript**
+- **React.js**
+- **Node.js**
+- **TypeScript**
+
+---
+
+## 🌟 Objetivo
+
+Este portfólio foi desenvolvido com o objetivo de apresentar meu trabalho como desenvolvedor, além de servir como uma forma de me conectar com profissionais e empresas interessados em minhas habilidades.
+
+Se você deseja colaborar em projetos, compartilhar feedback ou apenas conversar sobre tecnologia, entre em contato! 😊
+
+---
+
+## 📞 Contato
+
+- **Email**: [kauansantana2721@gmail.com](mailto:kauansantana2721@gmail.com)
+- **LinkedIn**: [Devsantx](https://www.linkedin.com/in/devsantx)
+- **GitHub**: [Devsantx](https://github.com/devsantx)
+
+---
+
+Feito com ❤️ por Kauan Santana.
