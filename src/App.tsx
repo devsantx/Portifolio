@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./global.css"
 
+import Navbar from "./components/navbar/Navbar";
+
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -28,14 +30,7 @@ function App() {
 
   return (
     <div className="w-screen h-screen text-white">
-      {/* <Navbar activeSection={activeSection} />
-      <Home id="home" />
-      <Technologies />
-      <Projects  id="projects"/>
-      <Experience id="experience" />
-      <Feedbacks id="feedbacks"/>
-      <Contact id="contact" />
-      <Footer /> */}
+      <Navbar activeSection={activeSection} />
     </div>
   );
 }
