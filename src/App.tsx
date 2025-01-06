@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./global.css"
 
 import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="w-screen h-screen text-white">
       <Navbar activeSection={activeSection} />
+      <Home id="home"/>
     </div>
   );
 }
