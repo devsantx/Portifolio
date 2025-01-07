@@ -4,6 +4,7 @@ import "./global.css"
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Technologies from "./components/technologies/Technologies";
+import Projects from "./components/projects/Projects";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Navbar activeSection={activeSection} />
       <Home id="home"/>
       <Technologies/>
+      <Projects id="projects"/>
     </div>
   );
 }
