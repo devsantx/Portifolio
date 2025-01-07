@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Technologies from "./components/technologies/Technologies";
 import Projects from "./components/projects/Projects";
+import Experience from "./components/experience/Experience";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Home id="home"/>
       <Technologies/>
       <Projects id="projects"/>
+      <Experience id="experience"/>
     </div>
   );
 }
