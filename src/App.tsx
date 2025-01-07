@@ -3,6 +3,7 @@ import "./global.css"
 
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import Technologies from "./components/technologies/Technologies";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     <div className="w-screen h-screen text-white">
       <Navbar activeSection={activeSection} />
       <Home id="home"/>
+      <Technologies/>
     </div>
   );
 }
