@@ -84,41 +84,31 @@ function Navbar({ activeSection }: NavbarProps) {
 
         {/* Botão hambúrguer no mobile */}
         <button
-          className="relative text-white md:hidden flex items-center justify-center w-10 h-10 z-10 mr-5"
-          onClick={() => setIsOpen(!isOpen)}
+        className="relative text-white md:hidden flex items-center justify-center w-10 h-10 z-10 mr-5"
+        onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="absolute inset-0 bg-gradient-radial from-[#0b7bc2] to-[#283c63] rounded-full -z-10"></span>
+        <span className="absolute inset-0 opacity-50 rounded-full z-0 bg-gradient-radial from-[#0b7bc2] to-[#283c63]"></span>
           {isOpen ? (
-            // Ícone de X
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="relative w-6 h-6"
+              className="relative w-6 h-6 z-10"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            // Ícone de hambúrguer
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="relative w-6 h-6"
+              className="relative w-6 h-6 z-10"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           )}
         </button>

@@ -18,11 +18,12 @@ function Feedbacks({ id }: FeedbacksProps) {
   const feedbacksData = useMemo(() => {
     const rawFeedbacksData = [
       { name: "Lucas Santos", cargoKey: "cargo1", descriptionKey: "description1", image: "./src/assets/person/lucas_santos.png" },
-      { name: "Lucas Cauã", cargoKey: "cargo2", descriptionKey: "description2", image: "./src/assets/person/lucas_caua.png" },
-      { name: "Thays Barbosa", cargoKey: "cargo3", descriptionKey: "description3", image: "./src/assets/person/thays_barbosa.png" },
-      { name: "Wesley José", cargoKey: "cargo4", descriptionKey: "description4", image: "./src/assets/person/wesley_jose.png" },
-      { name: "Rubia Evelyn", cargoKey: "cargo5", descriptionKey: "description5", image: "./src/assets/person/rubia_evelyn.png" },
-      { name: "Alisson Coimbra", cargoKey: "cargo6", descriptionKey: "description6", image: "./src/assets/person/alisson_coimbra.png" },
+      { name: "Lucas Cauã", cargoKey: "cargo2", descriptionKey: "description2", image: "./src/assets/person/lucas_caua.jpg" },
+      { name: "Thays Barbosa", cargoKey: "cargo3", descriptionKey: "description3", image: "./src/assets/person/thays_barbosa.jpg" },
+      // { name: "Wesley José", cargoKey: "cargo4", descriptionKey: "description4", image: "./src/assets/person/wesley_jose.png" },
+      { name: "Rubia Evelyn", cargoKey: "cargo5", descriptionKey: "description5", image: "./src/assets/person/rubia_evelyn.jpg" },
+      // { name: "Alisson Coimbra", cargoKey: "cargo6", descriptionKey: "description6", image: "./src/assets/person/alisson_coimbra.png" },
+      { name: "Julia Greicy", cargoKey: "cargo7", descriptionKey: "description7", image: "./src/assets/person/julia_greicy.jpg" },
     ];
 
     return rawFeedbacksData.map((feedback) => ({
