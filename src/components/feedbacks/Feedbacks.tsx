@@ -17,7 +17,7 @@ function Feedbacks({ id }: FeedbacksProps) {
   // Definição dos feedbacks
   const feedbacksData = useMemo(() => {
     const rawFeedbacksData = [
-      { name: "Lucas Santos", cargoKey: "cargo1", descriptionKey: "description1", image: "./src/assets/person/lucas_santos.png" },
+      { name: "João Lucas", cargoKey: "cargo1", descriptionKey: "description1", image: "./src/assets/person/joao_lucas.jfif" },
       { name: "Lucas Cauã", cargoKey: "cargo2", descriptionKey: "description2", image: "./src/assets/person/lucas_caua.jpg" },
       { name: "Thays Barbosa", cargoKey: "cargo3", descriptionKey: "description3", image: "./src/assets/person/thays_barbosa.jpg" },
       // { name: "Wesley José", cargoKey: "cargo4", descriptionKey: "description4", image: "./src/assets/person/wesley_jose.png" },
@@ -36,7 +36,7 @@ function Feedbacks({ id }: FeedbacksProps) {
   // Agrupamento responsivo dos feedbacks
   const groupedFeedbacks = useMemo(() => {
     const groups = [];
-    const itemsPerSlide = window.innerWidth >= 768 ? 6 : 2; // 6 no desktop, 2 no mobile
+    const itemsPerSlide = window.innerWidth >= 768 ? 3 : 2; // 6 no desktop, 2 no mobile
     for (let i = 0; i < feedbacksData.length; i += itemsPerSlide) {
       groups.push(feedbacksData.slice(i, i + itemsPerSlide));
     }
@@ -44,7 +44,7 @@ function Feedbacks({ id }: FeedbacksProps) {
   }, [feedbacksData]);
 
   return (
-    <section id={id} className="w-full flex flex-col items-center py-10 mt-20 md:mt-0">
+    <section id={id} className="w-full flex flex-col items-center py-10 mt-[-100px]  md:mt-0">
       <div className="w-full max-w-[1200px] mx-auto px-8 md:px-12 mt-20 md:mt-10 pb-20 pt-10 relative">
         <h1 className="text-3xl md:text-[40px] font-bold text-white uppercase tracking-wide text-center mb-[100px]">
           <span className="text-[#0b7bc2]">{t("feedbacks")}</span>

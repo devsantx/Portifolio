@@ -9,13 +9,12 @@ type FeedbacksInfoProps = {
 };
 
 function FeedbacksInfo({ image, description, name, cargo }: FeedbacksInfoProps) {
-  const [isExpanded, setIsExpanded] = useState(false); // Estado para controlar se o texto está expandido
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpanded = () => {
-    setIsExpanded(!isExpanded); // Alterna entre expandido e colapsado
+    setIsExpanded(!isExpanded);
   };
 
-  // Função para truncar o texto sem cortar palavras
   const truncateText = (text: string, maxLength: number) => {
     if (text.length <= maxLength) return text;
     const truncated = text.slice(0, maxLength).trim();
@@ -25,20 +24,21 @@ function FeedbacksInfo({ image, description, name, cargo }: FeedbacksInfoProps) 
   return (
     <div className="relative overflow-visible z-10 p-3">
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col border-2 border-[rgba(11,123,194,0.5)] rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105 hover:border-[#0b7bc2] shadow-lg p-6 hover:bg-[#1c2b3a] z-10 relative">
+        <div
+          className="flex flex-col border-2 border-[rgba(11,123,194,0.5)] rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105 hover:border-[#0b7bc2] shadow-lg p-6 hover:bg-[#1c2b3a] z-10 relative cursor-pointer"
+          onClick={toggleExpanded}
+          title={!isExpanded ? "Clique para expandir" : "Clique para recolher"}
+        >
           {/* Aspas */}
           <div className="flex items-start">
             <RxQuote className="text-3xl text-[#0b7bc2] opacity-50" />
           </div>
-
           {/* Descrição */}
           <div className="flex flex-col">
             <p
-              onClick={toggleExpanded}
-              className={`text-sm md:text-base text-justify text-[#8491A0] mt-2 break-words cursor-pointer ${
+              className={`text-sm md:text-base text-justify text-[#8491A0] mt-2 break-words ${
                 isExpanded ? "overflow-visible" : "overflow-hidden text-ellipsis line-clamp-3"
               }`}
-              title={!isExpanded ? "Clique para expandir" : "Clique para recolher"} // Texto de dica
             >
               {isExpanded ? description : truncateText(description, 100)}
             </p>
@@ -53,7 +53,16 @@ function FeedbacksInfo({ image, description, name, cargo }: FeedbacksInfoProps) 
             />
             <div>
               <h1 className="text-base md:text-xl font-bold text-left text-white">{name}</h1>
-              <p className="text-sm md:text-base text-[#a3cef1]">{cargo}</p>
+              <p
+                className={`text-sm md:text-base text-[#a3cef1] ${
+                  isExpanded
+                    ? "whitespace-normal overflow-visible"
+                    : "whitespace-nowrap overflow-hidden text-ellipsis"
+                }`}
+                style={{ maxWidth: "200px" }} // Limita a largura máxima visual do texto
+              >
+                {isExpanded ? cargo : truncateText(cargo, 30)}
+              </p>
             </div>
           </div>
         </div>

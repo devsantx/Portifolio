@@ -8,7 +8,7 @@ function Home({id}: HomeProps) {
   const { t } = useTranslation();
 
   return (
-    <section id={id} className="w-full h-screen flex justify-center items-center mb-[200px] md:mb-24 pt-[calc(100px+15rem)] md:pt-[calc(100px+1rem)] relative">
+    <section id={id} className="w-full h-screen flex justify-center items-center mb-12 md:mb-24 pt-[calc(100px+15rem)] md:pt-[calc(100px+1rem)] relative">
       <div className="w-full max-w-[1200px] flex justify-center md:mt-0 mt-[-150px] items-center relative flex-col gap-8 px-8 md:px-12 pb-20 pt-10">
         {/* Imagem */}
         <div className="flex justify-center items-center rounded-full shadow-[0_20px_75px_#0B7BC2] transform transition duration-300 ease-in-out hover:scale-110">
@@ -30,13 +30,13 @@ function Home({id}: HomeProps) {
         </div>
         {/* Botões */}
         <div className="flex gap-4 md:gap-5">
-          <button className="bg-white px-5 py-3 md:px-8 md:py-2 text-black text-base md:text-lg font-bold rounded-full shadow-lg hover:shadow-xl">
+          <button className="bg-white px-5 py-3 md:px-8 md:py-2 text-black text-sm md:text-lg font-bold rounded-full shadow-lg hover:shadow-xl">
             {t("bhome1")}
           </button>
           <a
             href="/src/assets/curriculo/Curriculo.pdf" // Ajuste o caminho para o arquivo PDF
             download
-            className="border-2 border-[#0b7bc2] px-5 py-3 md:px-8 md:py-2 text-[#0b7bc2] text-base md:text-lg font-bold rounded-full hover:bg-[#0b7bc2] hover:text-white transition"
+            className="border-2 border-[#0b7bc2] px-5 py-3 md:px-8 md:py-2 text-[#0b7bc2] text-sm md:text-lg font-bold rounded-full hover:bg-[#0b7bc2] hover:text-white transition"
           >
             {t("bhome2")}
           </a>

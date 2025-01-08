@@ -4,7 +4,7 @@ function Technologies() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full h-auto py-6 mt-10 md:mt-0 mb-10 md:mb-20">
+    <div className="w-full h-auto py-6 mt-0 mb-12 md:mb-20">
       <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center gap-6 px-4 pt-10 pb-20">
         {/* Título */}
         <h1 className="text-xl md:text-3xl font-bold text-white uppercase tracking-wide mb-10">

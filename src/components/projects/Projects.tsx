@@ -10,7 +10,7 @@ function Projects({ id }: ProjectsProps) {
   const { t } = useTranslation();
 
   return (
-    <section id={id} className="w-full py-10 mt-20 md:mt-0">
+    <section id={id} className="w-full py-10 mb-0 mt-[-100px]">
       {/* Contêiner do título e da grade */}
       <div className="w-full max-w-[1200px] mx-auto px-2 md:px-0 text-center mt-20 md:mt-10 pt-10 pb-20">
         <h1 className="text-3xl md:text-[40px] font-bold text-white uppercase tracking-wide mb-20">
