@@ -7,6 +7,7 @@ import Technologies from "./components/technologies/Technologies";
 import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
 import Feedbacks from "./components/feedbacks/Feedbacks";
+import Contact from "./components/contact/Contact";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <Projects id="projects"/>
       <Experience id="experience"/>
       <Feedbacks id="feedbacks"/>
+      <Contact id="contact"/>
     </div>
   );
 }
