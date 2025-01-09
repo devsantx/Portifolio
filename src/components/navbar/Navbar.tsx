@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Logo from "/assets/logos/logo.png";
+import eua from "/assets/logos/eua.png";
+import brasil from "/assets/logos/brasil.png";
 
 //Receber a informação da seção ativa
 interface NavbarProps {
@@ -28,7 +31,7 @@ function Navbar({ activeSection }: NavbarProps) {
       <div className="w-full max-w-[1200px] h-[80px] bg-[#1e1e1d] flex items-center justify-between rounded-2xl mx-4 px-5 shadow-lg">
         {/* Logo */}
         <img
-        src="./src/assets/logos/logo.png"
+        src={Logo}
         alt="Logo Devsantx"
         className="w-16 h-16"
         />
@@ -63,7 +66,7 @@ function Navbar({ activeSection }: NavbarProps) {
           >
             <span className="mr-2">EN</span>
             <img
-              src="./src/assets/logos/eua.png"
+              src={eua}
               alt="Flag of the United States"
               className="w-[20px] h-[20px]"
             />
@@ -76,8 +79,7 @@ function Navbar({ activeSection }: NavbarProps) {
           >
             <span className="mr-2">PT</span>
             <img
-              src="./src/assets/logos/brasil.png"
-              alt="Bandeira do Brasil"
+              src={brasil}              alt="Bandeira do Brasil"
               className="w-[20px] h-[20px]"
             />
           </button>
@@ -145,7 +147,7 @@ function Navbar({ activeSection }: NavbarProps) {
             >
               <span className="mr-2">EN</span>
               <img
-                src="./src/assets/logos/eua.png"
+                src={eua}
                 alt="Flag of the United States"
                 className="w-[20px] h-[20px]"
               />
@@ -158,7 +160,7 @@ function Navbar({ activeSection }: NavbarProps) {
             >
               <span className="mr-2">PT</span>
               <img
-                src="./src/assets/logos/brasil.png"
+                src={brasil}
                 alt="Bandeira do Brasil"
                 className="w-[20px] h-[20px]"
               />
@@ -169,8 +171,5 @@ function Navbar({ activeSection }: NavbarProps) {
     </div>
   )
 }
-
-
-
 
 export default Navbar

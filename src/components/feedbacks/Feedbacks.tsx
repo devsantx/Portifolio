@@ -7,6 +7,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
+import JL from "/assets/person/joao_lucas.jfif";
+import LC from "/assets/person/lucas_caua.jpg";
+import TB from "/assets/person/thays_barbosa.jpg";
+import RE from "/assets/person/rubia_evelyn.jpg";
+import JG from "/assets/person/julia_greicy.jpg";
+
 interface FeedbacksProps {
   id: string;
 }
@@ -17,13 +23,13 @@ function Feedbacks({ id }: FeedbacksProps) {
   // Definição dos feedbacks
   const feedbacksData = useMemo(() => {
     const rawFeedbacksData = [
-      { name: "João Lucas", cargoKey: "cargo1", descriptionKey: "description1", image: "./src/assets/person/joao_lucas.jfif" },
-      { name: "Lucas Cauã", cargoKey: "cargo2", descriptionKey: "description2", image: "./src/assets/person/lucas_caua.jpg" },
-      { name: "Thays Barbosa", cargoKey: "cargo3", descriptionKey: "description3", image: "./src/assets/person/thays_barbosa.jpg" },
+      { name: "João Lucas", cargoKey: "cargo1", descriptionKey: "description1", image: `${ JL }` },
+      { name: "Lucas Cauã", cargoKey: "cargo2", descriptionKey: "description2", image: `${ LC }` },
+      { name: "Thays Barbosa", cargoKey: "cargo3", descriptionKey: "description3", image: `${ TB }` },
       // { name: "Wesley José", cargoKey: "cargo4", descriptionKey: "description4", image: "./src/assets/person/wesley_jose.png" },
-      { name: "Rubia Evelyn", cargoKey: "cargo5", descriptionKey: "description5", image: "./src/assets/person/rubia_evelyn.jpg" },
+      { name: "Rubia Evelyn", cargoKey: "cargo5", descriptionKey: "description5", image: `${ RE }` },
       // { name: "Alisson Coimbra", cargoKey: "cargo6", descriptionKey: "description6", image: "./src/assets/person/alisson_coimbra.png" },
-      { name: "Julia Greicy", cargoKey: "cargo7", descriptionKey: "description7", image: "./src/assets/person/julia_greicy.jpg" },
+      { name: "Julia Greicy", cargoKey: "cargo7", descriptionKey: "description7", image: `${JG}` },
     ];
 
     return rawFeedbacksData.map((feedback) => ({

@@ -1,7 +1,12 @@
-import { useTranslation } from "react-i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import ProjectCard from "./cards/ProjectCards";
 import { RxGithubLogo } from "react-icons/rx";
+
+import Gerenciador from "/assets/cards/gerenciador.png";
+import Devfood from "/assets/cards/devfood.png";
+import Gerador from "/assets/cards/gerador.png";
+import Nearby from "/assets/cards/nlw.png";
 
 interface ProjectsProps {
   id: string; // Propriedade para o ID da seção
@@ -36,25 +41,25 @@ function Projects({ id }: ProjectsProps) {
           <ProjectCard
             title={t("t1")}
             description={t("subtitle")}
-            image="./src/assets/cards/gerenciador.png"
+            image={Gerenciador}
             url="https://github.com/devsantx/Gerenciador-de-Links"
           />
           <ProjectCard
             title={t("t2")}
             description={t("subtitle")}
-            image="./src/assets/cards/devfood.png"
+            image={Devfood}
             url="https://github.com/devsantx/Devfood"
           />
           <ProjectCard
             title={t("t3")}
             description={t("subtitle")}
-            image="./src/assets/cards/gerador.png"
+            image={Gerador}
             url="https://github.com/devsantx/Gerador-de-Senhas"
           />
           <ProjectCard
             title={t("t4")}
             description={t("subtitle")}
-            image="./src/assets/cards/nlw.png"
+            image={Nearby}
             url="https://github.com/devsantx/Nearby-Nlw-Rockseat"
           />
         </div>

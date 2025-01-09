@@ -2,6 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import ExperienceInfo from "./experienceInfo/ExperienceInfo";
 
+import Sizac from "/assets/logos/sizac.png";
+import Cesar from "/assets/logos/cesar.png";
+import Anais from "/assets/logos/Anais.png";
+
 interface ExperienceProps {
   id: string; // Propriedade para o ID da seção
 }
@@ -23,21 +27,21 @@ function Experience({ id }: ExperienceProps) {
         <div className="flex flex-col gap-10 md:gap-20 items-center">
           {/* Cada bloco de experiência */}
           <ExperienceInfo
-            image="./src/assets/logos/sizac.png"
+            image={Sizac}
             title={t("emp1")}
             description={t("emp1desc")}
             period={t("emp1period")}
           />
 
           <ExperienceInfo
-            image="./src/assets/logos/cesar.png"
+            image={Cesar}
             title={t("emp2")}
             description={t("emp2desc")}
             period={t("emp2period")}
           />
 
           <ExperienceInfo
-            image="./src/assets/logos/Anais.png"
+            image={Anais}
             title={t("emp3")}
             description={t("emp3desc")}
             period={t("emp3period")}

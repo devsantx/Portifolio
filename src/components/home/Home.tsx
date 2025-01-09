@@ -1,3 +1,5 @@
+import React from "react";
+import PersonImage from "/assets/person/Sant.png"
 import { useTranslation } from "react-i18next";
 
 interface HomeProps {
@@ -13,7 +15,7 @@ function Home({id}: HomeProps) {
         {/* Imagem */}
         <div className="flex justify-center items-center rounded-full shadow-[0_20px_75px_#0B7BC2] transform transition duration-300 ease-in-out hover:scale-110">
           <img
-            src="./src/assets/person/Sant.png"
+            src={ PersonImage }
             alt="Foto profissional de Devsantx"
             className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-full transform transition duration-300 ease-in-out hover:scale-110"
           />
