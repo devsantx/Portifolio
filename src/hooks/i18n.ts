@@ -94,7 +94,7 @@ export const resources = {
       emp3period: "Out 2024 – Dez 2024",
       // CONTACT
       contactSubtitle: "Vamos trabalhar juntos?",
-      contactDescriptio: "Sou um desenvolvedor em constante evolução, focado em criar soluções que unem design, funcionalidade e inovação. Estou disponível para colaborar em projetos web e mobile, trazendo minha paixão por tecnologia para cada linha de código.",
+      contactDescription: "Sou um desenvolvedor em constante evolução, focado em criar soluções que unem design, funcionalidade e inovação. Estou disponível para colaborar em projetos web e mobile, trazendo minha paixão por tecnologia para cada linha de código.",
       // FEEDBACKS
       cargo1: "Presidente e CTO do SIZAC",
       cargo2: "CTO do SIZAC",

@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 

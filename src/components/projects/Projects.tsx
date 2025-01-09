@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import React from "react";
 import ProjectCard from "./cards/ProjectCards";
 import { RxGithubLogo } from "react-icons/rx";
 

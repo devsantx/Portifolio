@@ -1,3 +1,5 @@
+import React from "react";
+
 type ExperienceInfoProps = {
   image: string
   title: string

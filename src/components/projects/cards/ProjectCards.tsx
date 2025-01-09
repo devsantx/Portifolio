@@ -1,3 +1,4 @@
+import React from "react";
 import { RxArrowTopRight } from "react-icons/rx";
 
 type ProjectCardProps = {
