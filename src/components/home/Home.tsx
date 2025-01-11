@@ -1,5 +1,6 @@
 import React from "react";
 import PersonImage from "/assets/person/Sant.png"
+import Resume from "/assets/resume/Curriculo.pdf";
 import { useTranslation } from "react-i18next";
 
 interface HomeProps {
@@ -32,11 +33,14 @@ function Home({id}: HomeProps) {
         </div>
         {/* Botões */}
         <div className="flex gap-4 md:gap-5">
-          <button className="bg-white px-5 py-3 md:px-8 md:py-2 text-black text-sm md:text-lg font-bold rounded-full shadow-lg hover:shadow-xl">
-            {t("bhome1")}
-          </button>
+        <button
+          className="bg-white px-5 py-3 md:px-8 md:py-2 text-black text-sm md:text-lg font-bold rounded-full shadow-lg hover:shadow-xl"
+          onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+        >
+          {t("bhome1")}
+        </button>
           <a
-            href="/src/assets/curriculo/Curriculo.pdf" // Ajuste o caminho para o arquivo PDF
+            href={Resume}
             download
             className="border-2 border-[#0b7bc2] px-5 py-3 md:px-8 md:py-2 text-[#0b7bc2] text-sm md:text-lg font-bold rounded-full hover:bg-[#0b7bc2] hover:text-white transition"
           >
