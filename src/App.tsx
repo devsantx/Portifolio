@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./global.css"
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
@@ -45,6 +46,7 @@ function App() {
       <Feedbacks id="feedbacks"/>
       <Contact id="contact"/>
       <Footer/>
+      <Analytics />
     </div>
   );
 }
